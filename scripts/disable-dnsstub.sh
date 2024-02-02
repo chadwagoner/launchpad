@@ -4,7 +4,7 @@
 sudo mkdir -p /etc/systemd/resolved.conf.d
 
 ### CREATE CONF FILE
-sudo echo -e "[Resolve]\nDNS=127.0.0.1\nDNSStubListener=no" | sudo tee /etc/systemd/resolved.conf.d/resolv.conf > /dev/null
+echo -e "[Resolve]\nDNS=127.0.0.1\nDNSStubListener=no" | sudo tee /etc/systemd/resolved.conf.d/resolv.conf > /dev/null
 
 ### REMOVE OLD RESOLV.CONF
 sudo rm /etc/resolv.conf
