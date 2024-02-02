@@ -1,5 +1,11 @@
 # UBUNTU SCRIPTS
 
+## CONFIGURE PORTAINER
+
+```bash
+curl -sL -H 'Cache-Control: no-cache, no-store' https://raw.githubusercontent.com/chadwagoner/launchpad/main/scripts/configure-portainer.sh | bash
+```
+
 ## DISABLE DNS STUB LISTENER
 
 ```bash
