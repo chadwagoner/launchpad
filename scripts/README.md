@@ -1,5 +1,11 @@
 # UBUNTU SCRIPTS
 
+## DISABLE DNS STUB LISTENER
+
+```bash
+curl -sL -H 'Cache-Control: no-cache, no-store' https://raw.githubusercontent.com/chadwagoner/launchpad/main/scripts/disable-dnsstub.sh | bash
+```
+
 ## INSTALL DOCKER
 
 ```bash
