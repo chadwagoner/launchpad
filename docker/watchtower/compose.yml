@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: watchtower
+    restart: unless-stopped
+    environment:
+      WATCHTOWER_CLEANUP: 'true'
+      WATCHTOWER_NOTIFICATION_URL: 'discord://$TOKEN@$WEBHOOKID'
+      WATCHTOWER_NOTIFICATIONS: 'shoutrrr'
+      WATCHTOWER_SCHEDULE: '0 0 8 * * 1'
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock
