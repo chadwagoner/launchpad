@@ -1,5 +1,7 @@
 #!/bin/bash
 
+### TODO: look to see if I can make it more silent with better logging lines
+
 ### INSTALL REQUIRED PACKAGES
 sudo apt-get update
 sudo apt-get install ca-certificates curl
@@ -17,6 +19,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 ### ADD DOCKER GROUP TO CURRENT USER
+### TODO: for some reason, group wasn't added to user. Has to do with variable being used but not set in script I believe
 sudo usermod -aG docker $USER
 
 ### ENABLE DOCKER TO START AT BOOT
