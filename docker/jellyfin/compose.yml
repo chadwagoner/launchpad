@@ -5,6 +5,8 @@ services:
     image: lscr.io/linuxserver/jellyfin:latest
     container_name: jellyfin
     restart: unless-stopped
+    devices:
+      - "/dev/dri:/dev/dri"
     networks:
       - proxy
     environment:
